@@ -1,0 +1,40 @@
+.lot{
+    width: 200px;
+    height: auto;
+    margin: 30px;
+    text-decoration: none;
+}
+.main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: right;
+}
+.lsb{
+    margin-top: 30px;
+    width: 20%;
+    min-height: 300px;
+    background-color: #66b86d
+}
+.header{
+    min-height: 70px;
+    width: 100%;
+    background-color: #7ccfff;
+    text-align: center;
+    font-size: xx-large;
+}
+.radio{
+    display: inline-block;
+
+    padding: 10px;
+
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
