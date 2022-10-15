@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Lot extends Model
+class Category extends Model
 {
     public $timestamps = false;
-    protected $fillable = [
-        'name',
-        'description'
-    ];
 
-    public function categories(){
-        return $this->hasMany(Category::class);
+    protected $fillable = [
+          'name',
+          'lot_id'
+    ];
+    public function lot(){
+        return $this->belongsTo(Lot::class);
     }
 }
