@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Category;
+use App\Http\Controllers\Lot;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('lots.index'));
 });
+
+Route::resource('/lots', Lot::class);
+Route::resource('/categories', Category::class);
